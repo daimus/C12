@@ -137,11 +137,11 @@ p {
     max-width: 900px;
 }
 
-.profile p {
+#profile p {
     margin: 20px 0;
 }
 
-.profile iframe {
+#profile iframe {
     margin-top: 30px;
 }
 
