@@ -170,6 +170,33 @@ p {
     color: #f82b7a;
 }
 
+/*SERVICES*/
+.services-section h2{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.service img{
+  width: 175px;
+}
+
+.service p{
+  text-align: center;
+  border-top: 2px solid gray;
+  padding: 20px 0;
+}
+
+.service{
+  box-shadow: 5px 5px 5px 5px gray;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.services-list{
+  display: flex;
+  margin-bottom: 50px;
+}
+
 /* CLIENTS  */
 #clients {
     background-color: #f0f9ff;
