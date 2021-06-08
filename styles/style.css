@@ -10,8 +10,9 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #2a324b;
     height: 100vh;
-    overflow-x: hidden;
 }
 
 p {
@@ -163,8 +164,7 @@ p {
     left: 9rem;
 }
 
-.memphis-icon-one,
-.memphis-icon-two {
+.memphis-icon-one, .memphis-icon-two {
     width: 120px;
     height: 120px;
     color: #f82b7a;
@@ -184,7 +184,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .clients-wrapper img {
@@ -207,7 +207,7 @@ p {
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    cursor: pointer
+    cursor:pointer
 }
 
 .btn-explore {
@@ -223,39 +223,16 @@ p {
 
 /* RESPONSIVE  */
 
-@media screen and (min-width: 1201px) {}
+@media screen and (min-width: 1201px) {
+    
+}
 
-@media screen and (max-width: 1200px) {}
-
-.container {
-    max-width: 1000px;
+@media screen and (max-width: 1200px) {
+    
 }
 
 @media screen and (max-width: 1024px) {
-    .container {
-        max-width: 750px;
-    }
-
-    .profile-wrapper div {
-        max-width: 700px;
-    }
-
-    .memphis-one {
-        top: 29rem;
-        left: 36rem;
-    }
-
-    .memphis-two {
-        top: 12rem;
-        left: 3rem;
-    }
-
-    .memphis-icon-one,
-    .memphis-icon-two {
-        width: 80px;
-        height: 80px;
-        color: #f82b7a;
-    }
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -275,62 +252,8 @@ p {
         list-style: none;
         display: none;
     }
-
-    .hero-wrapper {
-        display: flex;
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        text-align: center;
-        padding-bottom: 30px;
-    }
-
-    .hero-item {
-        padding: 0;
-        width: 100%;
-    }
-
-    .hero-item img {
-        width: 60vw;
-    }
-
-    .profile-wrapper div {
-        max-width: 400px;
-    }
-
-    .profile-wrapper iframe {
-        max-width: 400px;
-    }
-
-    .memphis-one {
-        top: 33rem;
-        left: 23rem;
-    }
-
-    .memphis-two {
-        top: 15rem;
-        left: -1rem;
-    }
-
-    .memphis-icon-one,
-    .memphis-icon-two {
-        width: 60px;
-        height: 60px;
-        color: #f82b7a;
-    }
-
-    .clients-wrapper img {
-        width: 80px;
-    }
 }
 
 @media screen and (max-width: 480px) {
-    .profile-wrapper iframe {
-        max-width: 90vw;
-    }
-    .memphis {
-        display: none;
-    }
-    .clients-wrapper img {
-        width: 50px;
-    }
+    
 }
