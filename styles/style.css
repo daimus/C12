@@ -289,6 +289,16 @@ p {
        
 
 /* COMPONENTS & UTILS  */
+.section-title {
+    position: relative;
+}
+
+.section-title svg {
+    width: 100px;
+    height: 5px;
+    color: #ea4c89;
+    z-index: -10;
+}
 
 .text-center {
     text-align: center;
