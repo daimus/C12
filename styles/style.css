@@ -10,9 +10,9 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
     color: #2a324b;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 p {
@@ -71,13 +71,41 @@ p {
 
 .nav-menu a {
     text-decoration: none;
+    font-size: 1rem;
+    color: rgba(107, 114, 128, 1);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-menu a:hover {
+    text-decoration: none;
     color: inherit;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: #ea4c89;
+    font-weight: 600;
 }
 
 .nav-menu svg {
     width: 1.5rem;
     fill: #2a324b;
+}
+
+.nav-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-logo h1 {
+    margin-left: 10px;
+}
+
+.nav-logo span {
+    font-size: 50px;
+    font-weight: 600;
+    color: #ea4c89;
+    line-height: 20px;
 }
 
 #nav-checkbox:checked~ul.nav-menu li {
