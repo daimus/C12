@@ -261,15 +261,12 @@ p {
 #team-section {
     margin: 50px 0;
     text-align: center;
-    float: right;
 }
 
 .team p {
     border-top: 2px solid gray;
     padding: 20px 0;
-
 }
-
 
 .team img {
     width: 175px;
@@ -286,6 +283,10 @@ p {
     text-align: center;
     padding-top: 50px;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px 30px;
+    flex-wrap: wrap;
 }
 
 
