@@ -192,47 +192,47 @@ p {
     left: 9rem;
 }
 
-.memphis-icon-one, .memphis-icon-two {
+.memphis-icon-one,
+.memphis-icon-two {
     width: 120px;
     height: 120px;
     color: #f82b7a;
 }
 
 /*SERVICES*/
-.services-section h2{
-  text-align: center;
-  margin-bottom: 50px;
-  
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.service img{
-  width: 130px;
+.service img {
+    width: 130px;
 }
 
-.service p{
-  text-align: center;
-  border-top: 2px solid gray;
-  padding: 20px 0;
+.service p {
+    text-align: center;
+    border-top: 2px solid gray;
+    padding: 20px 0;
 }
 
-.service{
-  box-shadow: 5px 5px 5px 5px gray;
-  margin-left: 20px;
-  margin-right: 20px;
-  float:right;
-  text-decoration: none;
-  color: black;
+.service {
+    box-shadow: 5px 5px 5px 5px gray;
+    text-decoration: none;
+    color: black;
+    width: 150px;
 }
 
-.service:hover{
-  opacity: 0.7;
+.service:hover {
+    opacity: 0.7;
 }
 
-.services-list{
-  display: flex;
-  margin-bottom: 50px;
-  text-align: center;
-  margin-left: 50px;
+.services-list {
+    display: flex;
+    margin-bottom: 50px;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px 30px;
 }
 
 /* CLIENTS  */
@@ -249,7 +249,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
 .clients-wrapper img {
@@ -261,32 +261,33 @@ p {
 #team-section {
     margin: 50px 0;
     text-align: center;
-    float:right;
+    float: right;
 }
 
-.team p{
+.team p {
     border-top: 2px solid gray;
     padding: 20px 0;
 
 }
 
 
-.team img{
+.team img {
     width: 175px;
-    }           
-.team{
+}
+
+.team {
     box-shadow: 5px 5px 5px 5px gray;
-    margin-left: 20px;    
+    margin-left: 20px;
     margin-right: 20px;
-    }
-    
-.team-wrapper{
+}
+
+.team-wrapper {
     margin-bottom: 50px;
     text-align: center;
-    padding-top:50px ;
-    display:flex;
+    padding-top: 50px;
+    display: flex;
 }
-       
+
 
 /* COMPONENTS & UTILS  */
 .section-title {
@@ -308,7 +309,7 @@ p {
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    cursor:pointer
+    cursor: pointer
 }
 
 .btn-explore {
@@ -324,17 +325,11 @@ p {
 
 /* RESPONSIVE  */
 
-@media screen and (min-width: 1201px) {
-    
-}
+@media screen and (min-width: 1201px) {}
 
-@media screen and (max-width: 1200px) {
-    
-}
+@media screen and (max-width: 1200px) {}
 
-@media screen and (max-width: 1024px) {
-    
-}
+@media screen and (max-width: 1024px) {}
 
 @media screen and (max-width: 768px) {
     .nav-toggle {
@@ -353,9 +348,6 @@ p {
         list-style: none;
         display: none;
     }
-}
-
-@media screen and (max-width: 480px) {
 
     .hero-wrapper {
         display: flex;
@@ -402,40 +394,18 @@ p {
     .clients-wrapper img {
         width: 80px;
     }
-    
-    /*SERVICES*/
-    .services-list{
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    
-    .service{
-      margin-bottom: 50px;
-    }
 }
 
 @media screen and (max-width: 480px) {
     .profile-wrapper iframe {
         max-width: 90vw;
     }
+
     .memphis {
         display: none;
     }
+
     .clients-wrapper img {
         width: 50px;
-    }
-    
-    /*SERVICES*/
-    .service{
-      max-width: 100px;
-    }
-    
-    .service img{
-      max-width: 90px;
-    }
-    
-    .service p{
-      padding: 10px 0;
-      font-size: 11px;
     }
 }
