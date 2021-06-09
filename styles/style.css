@@ -178,7 +178,7 @@ p {
 }
 
 .service img{
-  width: 175px;
+  width: 130px;
 }
 
 .service p{
@@ -192,6 +192,12 @@ p {
   margin-left: 20px;
   margin-right: 20px;
   float:right;
+  text-decoration: none;
+  color: black;
+}
+
+.service:hover{
+  opacity: 0.7;
 }
 
 .services-list{
@@ -312,5 +318,86 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+
+    .hero-wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .hero-item {
+        padding: 0;
+        width: 100%;
+    }
+
+    .hero-item img {
+        width: 60vw;
+    }
+
+    .profile-wrapper div {
+        max-width: 400px;
+    }
+
+    .profile-wrapper iframe {
+        max-width: 400px;
+    }
+
+    .memphis-one {
+        top: 33rem;
+        left: 23rem;
+    }
+
+    .memphis-two {
+        top: 15rem;
+        left: -1rem;
+    }
+
+    .memphis-icon-one,
+    .memphis-icon-two {
+        width: 60px;
+        height: 60px;
+        color: #f82b7a;
+    }
+
+    .clients-wrapper img {
+        width: 80px;
+    }
     
+    /*SERVICES*/
+    .services-list{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .service{
+      margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .profile-wrapper iframe {
+        max-width: 90vw;
+    }
+    .memphis {
+        display: none;
+    }
+    .clients-wrapper img {
+        width: 50px;
+    }
+    
+    /*SERVICES*/
+    .service{
+      max-width: 100px;
+    }
+    
+    .service img{
+      max-width: 90px;
+    }
+    
+    .service p{
+      padding: 10px 0;
+      font-size: 11px;
+    }
 }
