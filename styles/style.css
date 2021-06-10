@@ -170,7 +170,8 @@ p {
 }
 
 #profile p {
-    margin: 20px 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 #profile iframe {
@@ -241,7 +242,7 @@ p {
 
 /* CLIENTS  */
 #clients {
-    background-color: #f0f9ff;
+    background-color: #e3f4ff;
     padding: 50px 0;
 }
 
@@ -295,35 +296,96 @@ p {
 
 /* CONTACT */
 #contact {
-    background-color:#F8F8FF;
-    margin: 124px 0;
-    padding: 30px 0;
+    background-color: #F8F8FF;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    position: relative;
 }
 
 .contact-form h3 {
-  font-size:24px;
-  padding:36px 0;
+    font-size: 24px;
+    padding: 36px 0;
 }
 
-input, textarea {
-  width:400px;
-  margin-top:10px;
-  margin-bottom:30px;
-  padding:20px;
-  font-size:18px;
-  border: 1px solid #dee7ec;
+input,
+textarea {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
 }
 
 .contact-submit {
-  background-color:#B0C4DE;
-  color:#F5FFFA;
-  display:block;
+    background-color: #57b6ff;
+    color: #ffffff;
+    display: block;
 }
 
 .contact-submit:hover {
-  opacity:0.7;
+    opacity: 0.7;
 }
-/* CONTACT END */
+
+.contact-wave-bottom {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+}
+
+/* FOOTER  */
+footer {
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.links-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.social-btn {
+    color: rgba(55, 65, 81, 1);
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 10px;
+}
+
+.social-btn:hover {
+    color: rgb(0, 0, 0);
+
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.links a {
+    text-decoration: none;
+    color: rgba(75, 85, 99, 1);
+}
+
+.credit {
+    border-top: 2px solid rgb(207, 207, 207, 0.75);
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: rgb(246 249 255);
+}
 
 /* COMPONENTS & UTILS  */
 .section-title {
@@ -353,10 +415,16 @@ input, textarea {
     font-weight: 600;
     background-color: #ea4c89;
     color: #fff;
+    -webkit-box-shadow: 0px 8px 9px -2px rgba(0, 0, 0, 0.67);
+    box-shadow: 0px 8px 9px -2px rgba(0, 0, 0, 0.67);
 }
 
 .btn-explore:hover {
     background-color: #d37498;
+}
+
+.btn-explore:active {
+    box-shadow: none;
 }
 
 /* RESPONSIVE  */
@@ -443,5 +511,16 @@ input, textarea {
 
     .clients-wrapper img {
         width: 50px;
+    }
+
+    .links-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .links {
+        margin-top: 15px;
+        text-align: left;
     }
 }
